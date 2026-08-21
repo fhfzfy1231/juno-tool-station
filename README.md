@@ -63,7 +63,7 @@ npm run start
 5. 构建命令填写 `npm run build`。
 6. 启动命令填写 `npm run start`。
 7. 根据运行日志确认应用端口，在网站配置中反向代理到该端口。
-8. 为网站绑定 `tool.juno.foxbridge.team`。
+8. 为网站绑定你准备使用的域名。
 9. 申请并启用 HTTPS 证书，开启 HTTP 自动跳转 HTTPS。
 
 ## 搜索引擎推送模块规划
