@@ -118,8 +118,12 @@ export default function Home() {
 
       <footer>
         <a className="brand footer-brand" href="#top"><span className="brand-mark" aria-hidden="true"><span /></span><span className="brand-type"><strong>JUNO</strong><small>TOOL STATION</small></span></a>
-        <p>面向 Juno: New Origins 玩家与创作者的开放工具站。</p>
-        <div className="footer-meta"><span>TOOL.JUNO.FOXBRIDGE.TEAM</span><span>© 2026 FOXBRIDGE</span></div>
+        <p className="footer-summary">
+          <span>面向 Juno: New Origins 玩家与创作者的源码公开工具站。</span>
+          <a className="license-link" href="https://polyformproject.org/licenses/noncommercial/1.0.0" target="_blank" rel="license noreferrer">PolyForm Noncommercial 1.0.0 <ArrowIcon /></a>
+          <small>禁止未经授权的商业使用</small>
+        </p>
+        <div className="footer-meta"><span>TOOL.JUNO.FOXBRIDGE.TEAM</span><span>© 2026 AKAGI_ZEN / FOXBRIDGE</span></div>
       </footer>
 
       {selectedMilestone && (

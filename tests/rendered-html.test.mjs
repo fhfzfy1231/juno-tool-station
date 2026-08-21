@@ -47,6 +47,8 @@ test("renders the restored roadmap interactions and palette-only Label 2.2", asy
   assert.match(homeHtml, /aria-haspopup="dialog"/);
   assert.match(homeHtml, /href="https:\/\/juno\.foxbridge\.team"/);
   assert.match(homeHtml, />教程站<\/a>/);
+  assert.match(homeHtml, /PolyForm Noncommercial 1\.0\.0/);
+  assert.match(homeHtml, /禁止未经授权的商业使用/);
   assert.doesNotMatch(homeHtml, />关闭<\/button>/);
 
   const label = await worker.fetch(new Request("http://localhost/label", { headers: { accept: "text/html" } }), env, ctx);
@@ -61,4 +63,6 @@ test("renders the restored roadmap interactions and palette-only Label 2.2", asy
   assert.match(labelHtml, /列数/);
   assert.match(labelHtml, /行数/);
   assert.match(labelHtml, /LABEL 2\.2 · LOCAL/);
+  assert.match(labelHtml, /PolyForm Noncommercial 1\.0\.0/);
+  assert.match(labelHtml, /禁止未经授权的商业使用/);
 });

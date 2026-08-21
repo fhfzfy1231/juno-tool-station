@@ -90,5 +90,10 @@ export default function LabelPage() {
         <div className={styles.actions}><button className={`${styles.button} ${styles.primary}`} type="button" disabled={!slice} onClick={copyCode}>{copied ? "已复制" : "复制当前"}</button><button className={styles.button} type="button" disabled={!slice} onClick={() => slice && saveText(slice.code, `-R${slice.row}C${slice.column}`)}>导出当前</button><button className={styles.button} type="button" disabled={!result} onClick={() => result && saveText(result.slices.map((item) => `--- R${item.row}C${item.column} ---\n${item.code}`).join("\n\n"), "-all")}>导出全部</button></div>
       </div></section>
     </section>
+    <div className={styles.licenseFooter}>
+      <span>SOURCE LICENSE / NONCOMMERCIAL</span>
+      <a href="https://polyformproject.org/licenses/noncommercial/1.0.0" target="_blank" rel="license noreferrer">PolyForm Noncommercial 1.0.0 ↗</a>
+      <small>源码公开，禁止未经授权的商业使用</small>
+    </div>
   </main>;
 }
